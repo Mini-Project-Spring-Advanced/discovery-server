@@ -1,0 +1,17 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8761:8080"
+    networks:
+      - mini-project-net
+
+volumes:
+  postgres_data:
+
+networks:
+  mini-project-net:
+    external: true
