@@ -9,9 +9,6 @@ services:
     networks:
       - mini-project-net
 
-volumes:
-  postgres_data:
-
 networks:
   mini-project-net:
     external: true
